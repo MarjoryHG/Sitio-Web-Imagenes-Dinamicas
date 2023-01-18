@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sitio web con imágenes dinámicas usando HTML CSS y JavaScript</title>
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+
+<body>
+
+    <div id="hero">
+        <div class="navbar">
+            <img src="img/logo.png" alt="logo" class="logo">
+            <div class="user">
+                <button type="button">Explorar</button>
+                <img src="img/user.png" alt="usuario">
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="info">
+                <h1>DESCUBRIR</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa nam, deserunt accusamus impedit consequatur aut aperiam cupiditate assumenda <br> quibusdam consequuntur eligendi repellat? Dolore exercitationem reiciendis laborum dolor reprehenderit.
+                    Rerum, hic!</p>
+                <input type="search" placeholder="Buscar"><!--siempre que se pone un imput en html se le pone placeholder-->
+            </div>
+        </div>
+
+        <div class="slider">
+            <img src="img/left-arrow.png" id="prev">
+            <div class="preview">
+                <img src="img/small1.png" class="active thumbnail"><!--esta imagen es la primera que se va a proyectar-->
+                <img src="img/small2.png" class="thumbnail">
+                <img src="img/small3.png" class="thumbnail">
+                <img src="img/small4.png" class="thumbnail">
+                <img src="img/small5.png" class="thumbnail">
+            </div>
+            <img src="img/right-arrow.png" id="next">
+        </div>
+    </div>
+
+    <!-- scripts -->
+    <script src="js/app.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,124 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+#hero {
+    width: 100%;
+    height: 100vh;
+    background: url('../img/bg1.png');/*Aqui solo esta capturando el logo*/
+    background-size: cover;/*para que la imagen ocupe todo el ancho y todo el alto*/
+    background-position: center;
+    position: relative;/*que la position sea de acuerdo a la pantalla*/
+}
+
+.navbar {
+    width: 90%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;/*space-between:ayuda a dar un especio entre el contenido*/
+    position: relative;/*que la posicion de adapte en caulquier dispositivo*/
+    z-index: 10;/*sobreposicionamiento*/
+}
+
+.navbar .logo {
+    width: 60px;/**/
+    margin: 30px 0;
+    cursor: pointer;
+}
+
+.user {
+    display: flex;
+    align-items: center;/*justify context espara justificar contenido y este aliign-items es para imagenes*/
+}
+
+.user img {
+    width: 30px;/*accho*/
+    margin-left: 50px;/**/
+    cursor: pointer;/*cuando se le pone el cursos va a mostrar una manito*/
+}
+
+button {
+    padding: 8px 25px;/*espaciado*/
+    background: transparent;/*para que el color sea transparente*/
+    outline: none;/*es usada para establecer el estilo del contorno de un elemento.(en este caso dice que no tiene*/
+    border: 2px solid #ffffff;
+    border-radius: 20px;/*los bordes sean cuadrados o redondeados*/
+    color: #ffffff;
+    font-size: 12px;/**/
+}
+
+.container {
+    width: 50%;
+    height: 100vh;
+    background: rgba(86, 86, 86, 0.3);
+    backdrop-filter: blur(10px);/*difuminar la clase container*/
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.info {
+    width: 550px;
+    color: #ffffff;
+    position: absolute;
+    right: 70px;
+    top: 50%;
+    transform: translateY(-50%);/*que este en la mitad de la pantalla(posicion del contenido)*/
+}
+
+.info h1 {/*esta llamandoa la clase info con la etiqueta h1*/
+    font-size: 60px;
+    letter-spacing: 10px;/*espaciado entre letras*/
+}
+
+.info p {
+    color: #f0eef1;
+    font-size: 11px;/*tamaña de fondo*/
+    margin: 20px 0;
+    line-height: 18px;/*tine una linea de altura de 18px*/
+}
+
+.info input {
+    width: 50%;/*ancho*/
+    padding: 8px 10px;/**/
+    outline: none;/*no tiene contorno*/
+    border: 2px solid #ffffff;
+    border-radius: 20px;/*radio en los borde de 20px*/
+    background: transparent;
+    color: #ffffff;/*color del texto blanco*/
+    font-size: 12px;/*tamaño de fondo*/
+}
+
+::placeholder {/*aqui estamos buscando el seudoelemento placeholder. los dos puntos significan un seudoelemento, para hacer referencia a un elemento  exacto.Todos los placeholder se editan igual, no s epuede editar uno y otro editarlo diferente.*/
+    color: #cccccc;
+}
+
+.slider {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    right: 30px;
+    bottom: 50px;
+}
+
+#prev,
+#next {
+    width: 20px;
+    cursor: pointer;
+    margin: 0 30px;
+}
+
+.preview img {
+    width: 60px;
+    margin: 0 10px;
+    opacity: 0.4;
+}
+
+.preview .active {
+    border: 3px solid #ffffff;
+    width: 100px;
+    opacity: 1;
+}
